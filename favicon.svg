@@ -1,0 +1,5 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><circle cx="60" cy="60" r="58" fill="#1d2a4d"/>
+<circle cx="60" cy="60" r="51" fill="none" stroke="#e9b949" stroke-width="2.2" stroke-dasharray="4.2 3.2"/>
+<path d="M50 26 V58" stroke="#e9b949" stroke-width="4" stroke-linecap="round"/><path d="M50 26 L72 21 V52" stroke="#e9b949" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="44" cy="59" rx="8" ry="6" transform="rotate(-20 44 59)" fill="#e9b949"/><ellipse cx="66" cy="53" rx="8" ry="6" transform="rotate(-20 66 53)" fill="#e9b949"/>
+<clipPath id="chring"><circle cx="60" cy="60" r="51"/></clipPath><g clip-path="url(#chring)" fill="none" stroke-width="5"><path d="M0 90 Q60 60 120 90" stroke="#fbfcfd"/><path d="M0 100 Q60 70 120 100" stroke="#c3304e"/><path d="M0 110 Q60 80 120 110" stroke="#fbfcfd"/></g></svg>

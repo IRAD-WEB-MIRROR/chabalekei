@@ -1,0 +1,54 @@
+*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0}
+img{max-width:100%;height:auto;display:block}a{color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ico{width:1em;height:1em;vertical-align:-.12em;fill:currentColor}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+.ch{--shirt:#fbfcfd;--scarf:#c3304e;--navy:#1d2a4d;--thread:#e9b949;--step:#eef1f7;background:var(--shirt);color:var(--navy);font:16px/1.6 'Mulish',sans-serif;position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column}
+.ch ::selection{background:#f6c9d3}
+.ch main{flex:1;position:relative}
+.ch .sash{position:absolute;top:58px;right:-170px;width:520px;height:58px;background:var(--scarf);transform:rotate(38deg);box-shadow:0 10px 24px -8px rgba(29,42,77,.35)}
+@media (max-width:640px){.ch .sash{top:-6px;right:-200px;width:360px;height:40px}}
+.ch .sash::after{content:"";position:absolute;left:0;right:0;top:8px;border-top:2px dashed rgba(255,255,255,.55)}
+.ch .hd{position:relative;display:flex;gap:16px;align-items:center;padding:24px max(16px,4%) 12px;text-decoration:none;color:var(--navy);max-width:760px}
+.ch .patch{flex:none;width:88px;height:88px}
+.ch .hd b{font:800 clamp(28px,4.4vw,40px)/1.05 'Sniglet',sans-serif;display:block}
+.ch .hd small{font-size:14px;display:block;max-width:36ch}
+.ch nav{position:relative;display:flex;flex-wrap:wrap;gap:4px 20px;padding:0 max(16px,4%) 20px;font:800 15px 'Mulish',sans-serif;max-width:80%}
+.ch nav a{color:var(--navy);text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:transparent}
+.ch nav a:hover,.ch nav a[aria-current]{text-decoration-color:var(--scarf)}
+.ch .risers{position:relative;padding:4px max(16px,4%) 0;max-width:980px}
+.ch h1,.ch h2.s{font:800 24px/1.15 'Sniglet',sans-serif;margin:0 0 8px;color:var(--scarf);text-wrap:balance}
+.ch h1.big{font-size:clamp(30px,5vw,44px);color:var(--navy)}
+.ch .tier{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:6px 14px;border-top:6px solid var(--navy);padding:11px 14px;background:var(--step)}
+@media (max-width:560px){.ch .tier{grid-template-columns:minmax(0,1fr) auto}.ch .tier .left{grid-column:1/-1}}
+.ch .tier+.tier{margin-inline:4% 0}
+.ch .tier+.tier+.tier{margin-inline:8% 0}
+.ch .tier b{font:800 18px 'Sniglet',sans-serif}
+.ch .tier span{font-size:14px;font-variant-numeric:tabular-nums}
+.ch .tier .left{font-weight:800;font-size:13px;color:var(--scarf)}
+.ch .tier .left.full{color:#5d6680}
+.ch .join{position:relative;margin:20px max(16px,4%) 0;border:3px solid var(--navy);padding:16px;display:grid;align-items:start;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:18px;background:#fff;max-width:980px}
+@media (max-width:640px){.ch .join{grid-template-columns:minmax(0,1fr)}}
+.ch .join h2{font:800 22px/1.1 'Sniglet',sans-serif;margin:0 0 8px;text-wrap:balance}
+.ch .join p{margin:0}
+.ch .join form{display:grid;gap:10px}
+.ch .join label{display:grid;gap:3px;font-weight:800;font-size:13px}
+.ch .join input,.ch .join select{font:15px 'Mulish',sans-serif;padding:8px 10px;border:2px solid var(--navy);background:var(--shirt);color:var(--navy)}
+.ch .join input:focus,.ch .join select:focus{outline:3px solid var(--thread);outline-offset:0}
+.ch .join button{font:800 16px 'Sniglet',sans-serif;background:var(--scarf);color:#fff;border:0;padding:11px;cursor:pointer}
+.ch .join button:hover{background:#a62640}
+.ch .msg{font-weight:800;margin:0;min-height:1.5em}
+.ch .msg:empty{display:none}.ch .msg.err{color:#a62640}.ch .msg.ok{color:#1f6b45}
+.ch .low{padding:18px max(16px,4%) 26px;font-size:15px;max-width:980px}
+.ch .col{position:relative;padding:4px max(16px,4%) 30px;max-width:760px}
+.ch .col h2{font:800 22px/1.2 'Sniglet',sans-serif;margin:26px 0 6px}
+.ch .col p{margin:0 0 12px}
+.ch .col ul{padding-left:20px;margin:0 0 12px}.ch .col li{margin-bottom:6px}
+.ch .gig{display:grid;grid-template-columns:86px minmax(0,1fr);gap:14px;border-top:6px solid var(--navy);background:var(--step);padding:12px 14px;margin-bottom:10px}
+.ch .gig .d{font:800 30px/1 'Sniglet',sans-serif;color:var(--scarf)}
+.ch .gig .d small{display:block;font:800 12px 'Mulish',sans-serif;color:var(--navy);margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
+.ch .gig b{font:800 18px 'Sniglet',sans-serif;display:block}
+.ch .gig span{font-size:14px}
+.ch footer{position:relative;background:var(--navy);color:#dfe4f0;padding:20px max(16px,4%);font-size:14px;display:grid;gap:4px;margin-top:20px}
+.ch footer a{color:#fff}
